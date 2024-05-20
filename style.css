@@ -1,0 +1,295 @@
+		<script type="text/javascript">
+			function login() {
+			var nome = prompt("Qual o seu nome?", "Zé Ninguém");
+			alert("Olá, " + nome.toUpperCase() + ".");
+			}
+		</script>
+
+
+
+
+
+
+body{
+	font-family: "Verdana";
+}
+
+a:visited{
+	color: blue;
+}
+
+a.active{
+	color: hotpink;
+}
+
+h1{
+	font-size: 40px; 
+	text-align:center;
+}
+p{
+	font-size: 16px; 
+	color: #808080; 
+	text-align:justify;
+}
+h2{
+	font-size: 25px; 
+	color: #000000; 
+	text-align:center;
+}
+
+#cabecalho 
+
+.tituloPortal{
+	font-size: 40px;
+    color: blue;
+    text-align: center;
+}
+
+.navMenu{
+	text-align:center;
+	border: solid 1px #A9A9A9;
+	padding-top: 20px;
+	padding-bottom:20px;
+	margin-bottom:30px;
+	min-height:145px;
+}
+.imglogo{
+	width:100px!important; 
+}
+
+
+.navMenu a{
+	letter-spacing: 1px;
+	padding-right:30px;
+	font-size:18px;
+}
+
+.linha{
+	display: flex;
+	position:relative;
+}
+
+.noticiaDestaque{
+	padding:20px;
+	border: solid 1px #A9A9A9;
+	margin-top:10px
+}
+
+.lerNoticia{
+	padding:20px;
+	margin-top:10px
+}
+
+.tituloLerNoticia, .divForm{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.tituloLerNoticia h2{
+	font-size: 40px;
+}
+
+.tituloNoticia {
+	text-align:center;
+	width: 100%;
+	text-decoration: underline;
+}
+
+.imgNoticia {
+	width: 40%;
+	float: left;
+	text-align:center;
+	position: relative;
+}
+
+.imgNoticia img, .imgNoticiaLer img{
+	width: 100%;
+}
+
+.imgNoticiaLer {
+	width: 60%;
+	float: left;
+	position: relative;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.textoNoticia {
+	padding:5px;
+	width: 55%;
+	float: left;
+	position: relative;
+}
+
+.textoNoticiaLer {
+	padding:5px;
+	width: 55%;
+	float: left;
+	position: relative;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.outrasNoticias{
+	padding:20px;
+	padding-top:5px;
+	border: solid 1px #A9A9A9;
+	margin-top:10px
+}
+
+.rodape_pagina {
+	margin-top:70px;
+	float:left;
+	width:100%;
+}
+
+.link{
+	text-align: right;
+}
+
+.rodape_pagina p{
+	text-align:center;
+	border: solid 1px #A9A9A9;
+	padding-top: 8px;
+	padding-bottom:8px;
+	font-size: 17px; 
+	font-family: Verdana;
+	color: blue;
+}
+
+
+
+
+
+
+
+.text-rigth{
+	text-align:right;
+}
+
+.text-center{
+	text-align:center;
+}
+
+
+button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+
+.cardNoticia{
+	border: solid 1px #A9A9A9;
+	padding: 10px;
+	border-radius: 5px;
+	min-height:250px;
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+
+form label{
+	font-weight:700;
+	float:right;
+	font-size:20px;
+	padding-top:15px;
+}
+
+/*Responsivo */
+
+/*Incluír preenchimento e a borda na largura e altura total dos elementos. */
+
+* {
+  box-sizing: border-box;
+}
+
+/*img acupando 100%*/
+
+img{
+	width: 100%
+}
+
+
+/*Primeiro devemos calcular a porcentagem para uma coluna: 100% / 12 colunas = 8,33%.*/
+/*Esquema com 12 colunas */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+/*Todas essas colunas devem flutuar para a esquerda e ter um espaço de 15px: */
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/*criamos uma div com display de tabela pra evitar sobreposição de colunas ou divs */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Esquema com 12 colunas medio*/
+
+@media only screen and (max-width: 850px) {
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+}
+
+
+/*Esquema com 12 colunas pequeno*/
+
+@media only screen and (max-width: 600px) {
+  .col-p-1 {width: 8.33%;}
+  .col-p-2 {width: 16.66%;}
+  .col-p-3 {width: 25%;}
+  .col-p-4 {width: 33.33%;}
+  .col-p-5 {width: 41.66%;}
+  .col-p-6 {width: 50%;}
+  .col-p-7 {width: 58.33%;}
+  .col-p-8 {width: 66.66%;}
+  .col-p-9 {width: 75%;}
+  .col-p-10 {width: 83.33%;}
+  .col-p-11 {width: 91.66%;}
+  .col-p-12 {width: 100%;}
+  
+  
+  form label{
+	float:left;
+  }
+  
+  [class*="col-"] {
+    padding: 5px; 
+  }
+  
+}
+
